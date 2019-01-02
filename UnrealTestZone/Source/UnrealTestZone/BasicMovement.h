@@ -4,19 +4,18 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "Grabber.generated.h"
+#include "BasicMovement.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class UNREALTESTZONE_API UGrabber : public UActorComponent
+class UNREALTESTZONE_API UBasicMovement : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UGrabber();
-
-	float reachDistance;
+	UBasicMovement();
+	FVector speed;
 
 protected:
 	// Called when the game starts
